@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<!-- HEAD -->
+<head>
+
+<!-- META -->
+  <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+  
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+
+<!-- SCRIPT -->
+  <script>
+  	function queryParam(){
+  		var params = new URLSearchParams(location.search);
+  		if(params.has('page')){
+  			var page = params.get('page');
+  			var ele = document.getElementById(page);
+  			if(ele){
+  				let home = document.getElementById('home');
+  				let about = document.getElementById('about');
+  				home.style.display="none";
+  				about.style.display = "none";
+  				ele.style.display = "block";
+  			}
+  		}
+  		else{
+  			let home = document.getElementById('home');
+  			home.style.display = "block";
+  		}
+  	}
+  </script>
+  
+  
+  
+  
+</head>
+
+
+<!-- BODY -->
+<body onload="queryParam();">
+
+
+<div id="wrapper">
+  <div id="header">
+    <div id="logo">
+      <a href="index.html"><img src="http://endlessicons.com/wp-content/uploads/2012/11/home-icon-614x460.png" height="158" width="230"/></a>
+    </div>
+    <div id="primary_links">    
+      <menu>         
+        <li><a href="index.html"> Home | </a></li>
+        <li><a href="about.html">About | </a></li>
+        <li><a href="resume.html">Resume | </a></li>
+        <li><a href="projects.html">Projects | </a></li>
+        <li><a href="contact.html">Contact | </a></li>           
+      </menu>
+      
+      
+    </div>
+    <div id="masthead_landing">
+    </div>
+    
+  </div>
+  
+  
+  <div>
+    <p> <h3>Fall 2019</h3> </p>
+    <a href="Resume.pdf">Fall 2019 Resume</a>
+  </div>
+
+
+		
+	</div>
+	
+ 
+ 
+      
+                        
+</body>
+ <div id="footer">
+    &copy Jaysen Javier -
+    <script type="text/javascript">
+        var d = new Date()
+        document.write(d.getFullYear())
+    </script>
+  </div>
+  
+  
+</html>
+
+
