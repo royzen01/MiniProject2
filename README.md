@@ -1,4 +1,4 @@
 # MiniProject2
 
 ### Royland Sanchez - Royzen01
-### Jaysen Jayden - JJ484
+### Jaysen Javier - JJ484
