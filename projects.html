@@ -5,42 +5,42 @@
 <!-- HEAD -->
 <head>
 
-  <!-- META -->
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- META -->
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./main.css">
 
-  <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#fafafa">
 
 
-  <!-- SCRIPT -->
-  <script>
-    function queryParam() {
-      var params = new URLSearchParams(location.search);
-      if (params.has('page')) {
-        var page = params.get('page');
-        var ele = document.getElementById(page);
-        if (ele) {
-          let home = document.getElementById('home');
-          let about = document.getElementById('about');
-          home.style.display = "none";
-          about.style.display = "none";
-          ele.style.display = "block";
+    <!-- SCRIPT -->
+    <script>
+        function queryParam() {
+            var params = new URLSearchParams(location.search);
+            if (params.has('page')) {
+                var page = params.get('page');
+                var ele = document.getElementById(page);
+                if (ele) {
+                    let home = document.getElementById('home');
+                    let about = document.getElementById('about');
+                    home.style.display = "none";
+                    about.style.display = "none";
+                    ele.style.display = "block";
+                }
+            } else {
+                let home = document.getElementById('home');
+                home.style.display = "block";
+            }
         }
-      } else {
-        let home = document.getElementById('home');
-        home.style.display = "block";
-      }
-    }
-  </script>
+    </script>
 
 
 </head>
@@ -51,75 +51,92 @@
 
 
 <div id="wrapper">
-  <div id="header">
-    <div id="logo">
-      <a href="index.html"><img src="http://endlessicons.com/wp-content/uploads/2012/11/home-icon-614x460.png"
-                                height="158" width="230"/></a>
-    </div>
-    <div id="primary_links">
-      <menu>
-        <li><a href="index.html"> Home | </a></li>
-        <li><a href="about.html">About | </a></li>
-        <li><a href="https://www.linkedin.com/in/royland-sanchez-a1a916190/">Resume | </a></li>
-        <li><a href="projects.html">Projects | </a></li>
-        <li><a href="writings.html">Writings | </a></li>
-        <li><a href="contact.html">Contact | </a></li>
-      </menu>
+    <div id="header">
+        <div id="logo">
+            <a href="index.html"><img src="http://endlessicons.com/wp-content/uploads/2012/11/home-icon-614x460.png"
+                                      height="158" width="230"/></a>
+        </div>
+        <div id="primary_links">
+            <menu>
+                <li><a href="index.html"> Home | </a></li>
+                <li><a href="about.html">About | </a></li>
+                <li><a href="https://www.linkedin.com/in/royland-sanchez-a1a916190/">Resume | </a></li>
+                <li><a href="projects.html">Projects | </a></li>
+                <li><a href="writings.html">Writings | </a></li>
+                <li><a href="contact.html">Contact | </a></li>
+            </menu>
 
 
+        </div>
     </div>
+
     <div id="masthead_landing">
     </div>
 
     <div>
-      <p>
-      <h2> Project 1 : Link to Project </h2>
-      <p>
-      <p>
+        <p>
+        <h2> Project 1 : Link to Project </h2>
+        <p>
+        <p>
 
-        Github: <a href="https://github.com/royzen01/MiniProject">Mini Project 1</a>
+            Github: <a href="https://github.com/royzen01/MiniProject">Mini Project 1</a>
 
-      </p>
+        </p>
     </div>
 
 
     <div>
-      <p>
-      <h2> Project 2 : Portfolio Project </h2>
-      <p>
-      <p>
-        Github Pages: <a href="https://royzen01.github.io/MiniProject2/">Mini Project 2</a> <br>
-        Github: <a href="https://github.com/royzen01/MiniProject2">Mini Project 2</a>
-      </p>
+        <p>
+        <h2> Project 2 : Portfolio Project </h2>
+        <p>
+        <p>
+            Github Pages: <a href="https://royzen01.github.io/MiniProject2/">Mini Project 2</a> <br>
+            Github: <a href="https://github.com/royzen01/MiniProject2">Mini Project 2</a>
+        </p>
     </div>
 
 
     <div>
-      <p>
-      <h2> Project 3 : Marketing Portfolio </h2>
-      <p>
-      <p>
-        WIP
-      </p>
+        <p>
+        <h2> Project 3 : Marketing Portfolio </h2>
+        <p>
+        <p>
+            WIP
+        </p>
     </div>
 
 
     <div>
-      <p>
-      <h2> Project 4 : App </h2>
-      <p>
-      <p>
-        WIP
-      </p>
+        <p>
+        <h2> Project 4 : App </h2>
+        <p>
+        <p>
+            WIP
+        </p>
     </div>
 
-    <div id="footer">
-      &copy Royland Sanchez -
-      <script type="text/javascript">
+</div>
+
+<div id="footer">
+    &copy Royland Sanchez -
+    <script type="text/javascript">
         var d = new Date()
         document.write(d.getFullYear())
-      </script>
-    </div>
+    </script>
+</div>
+
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-154156202-1', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </body>
 
 
